@@ -29,15 +29,9 @@ class ViewController: UIViewController {
         
         let thumbImageNormal = #imageLiteral(resourceName: "target")
         slider.setThumbImage(thumbImageNormal, for: .normal)
-        
-        //let thumbImageHighlighted = #imageLiteral(resourceName: "target-bullseye")
-        //slider.setThumbImage(thumbImageHighlighted, for: .highlighted)
-        
-        
     }
 
     @IBAction func showAlert() {
-        
         let difference = abs(targetValue - currentValue)
         var points = 100 - difference
         score += points
@@ -56,8 +50,8 @@ class ViewController: UIViewController {
         } else {
             title = "Juuuust a bit outside..."
         }
-        
-        let message = "You scored \(points) points"
+
+        let message = "You hit \(currentValue)!\n" + "You scored \(points) points!"
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "Okay!", style: .default, handler: {
