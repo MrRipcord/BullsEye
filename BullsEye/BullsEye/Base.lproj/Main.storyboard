@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BullsEye" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="25_thrones-2.w710.h473" translatesAutoresizingMaskIntoConstraints="NO" id="zms-0s-KjR">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6L7-1I-mjn">
+                                <rect key="frame" x="6" y="20" width="556" height="280"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmP-mU-deL">
+                                        <rect key="frame" x="504" y="236" width="32" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="info-round-button512a"/>
+                                        <connections>
+                                            <segue destination="G25-Cw-hPb" kind="presentation" modalTransitionStyle="flipHorizontal" id="nZ2-Jh-cd5"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="420" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0e-z5-tHb">
+                                        <rect key="frame" x="442" y="241" width="33" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="0.0" height="2"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stage:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkc-cj-UZt">
+                                        <rect key="frame" x="387" y="241" width="47" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="0.0" height="2"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="133700" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJ5-03-BEW">
+                                        <rect key="frame" x="132" y="241" width="68" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="0.0" height="2"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqB-EU-0MK">
+                                        <rect key="frame" x="76" y="241" width="48" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="0.0" height="2"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbh-Fl-TH1">
+                                        <rect key="frame" x="20" y="236" width="32" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="resetButton"/>
+                                        <connections>
+                                            <action selector="resetGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nne-Dm-kJw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oY-F3-wku">
+                                        <rect key="frame" x="245" y="144" width="79" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="crossbow512">
+                                            <color key="titleShadowColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="highlighted" image="crossbow512"/>
+                                        <connections>
+                                            <action selector="showAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Gl-jw-pJG"/>
+                                        </connections>
+                                    </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="HV9-dt-rPb">
+                                        <rect key="frame" x="74" y="84" width="415" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" image="YES"/>
+                                        </accessibility>
+                                        <connections>
+                                            <action selector="sliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="JAp-y6-NT6"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFU-l7-Nnu">
+                                        <rect key="frame" x="504" y="87" width="29" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="0.0" height="2"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGU-lf-JFc">
+                                        <rect key="frame" x="459" y="20" width="33" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="0.0" height="2"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Place the Bull's Eye as close as you can to:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="804-dP-foQ">
+                                        <rect key="frame" x="76" y="21" width="375" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <size key="shadowOffset" width="0.0" height="2"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHo-Gl-4n3">
+                                        <rect key="frame" x="26" y="88" width="21" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="0.0" height="2"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="Mjb-Ss-fk4"/>
+                                    <constraint firstAttribute="width" constant="556" id="RPl-wd-PER"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zms-0s-KjR" firstAttribute="leading" secondItem="21R-bA-3xL" secondAttribute="leading" id="3yh-el-FnB"/>
+                            <constraint firstItem="6L7-1I-mjn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5M7-bl-1oU"/>
+                            <constraint firstItem="zms-0s-KjR" firstAttribute="trailing" secondItem="21R-bA-3xL" secondAttribute="trailing" id="GP3-mU-iMv"/>
+                            <constraint firstItem="zms-0s-KjR" firstAttribute="bottom" secondItem="21R-bA-3xL" secondAttribute="bottom" id="W2C-HE-s00"/>
+                            <constraint firstItem="zms-0s-KjR" firstAttribute="top" secondItem="21R-bA-3xL" secondAttribute="top" id="ZIm-91-Evk"/>
+                            <constraint firstItem="6L7-1I-mjn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wfD-hh-fLt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="21R-bA-3xL"/>
+                    </view>
+                    <connections>
+                        <outlet property="roundLabel" destination="k0e-z5-tHb" id="2io-4D-OgV"/>
+                        <outlet property="scoreLabel" destination="DJ5-03-BEW" id="K0K-rU-I9W"/>
+                        <outlet property="slider" destination="HV9-dt-rPb" id="ZfJ-6i-taD"/>
+                        <outlet property="targetLabel" destination="oGU-lf-JFc" id="vpU-qT-qhO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-225" y="91.875"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="Uyw-Fk-KPu">
+            <objects>
+                <viewController id="G25-Cw-hPb" customClass="AboutViewController" customModule="BullsEye" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fw0-oY-5Eg">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="25_thrones-2.w710.h473" translatesAutoresizingMaskIntoConstraints="NO" id="Hc5-c3-gW6">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87j-Sm-w7K">
+                                <rect key="frame" x="516" y="268" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="2nn-4r-8O7"/>
+                                    <constraint firstAttribute="width" constant="32" id="xLt-y0-Cg6"/>
+                                </constraints>
+                                <state key="normal" image="about"/>
+                                <connections>
+                                    <segue destination="6TD-Qg-zdZ" kind="presentation" modalTransitionStyle="flipHorizontal" id="pN6-Dy-rBf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6d-bP-cL8">
+                                <rect key="frame" x="268" y="268" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="4r8-QR-S5O"/>
+                                    <constraint firstAttribute="height" constant="32" id="hEe-ep-dIo"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="kld-WQ-xEh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="l7y-mx-tSu"/>
+                                </constraints>
+                                <state key="normal" image="CloseButton512"/>
+                                <connections>
+                                    <action selector="close" destination="G25-Cw-hPb" eventType="touchUpInside" id="bmD-gP-47N"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iQh-uE-6kJ">
+                                <rect key="frame" x="20" y="20" width="528" height="240"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="528" id="UXZ-Vh-PQo"/>
+                                    <constraint firstAttribute="height" constant="240" id="wbo-M0-oaQ"/>
+                                </constraints>
+                                <string key="text">*** Bull's Eye ***
+
+Welcome to the awesome game of Bull's Eye, where you can win points and fame by dragging a slider!
+
+Your goals is to place the slider as close as possible to the target value. The closer you are, the more points you score.
+
+Enjoy!
+</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dvW-Eq-en7" firstAttribute="bottom" secondItem="87j-Sm-w7K" secondAttribute="bottom" constant="20" id="5vs-PM-7VR"/>
+                            <constraint firstItem="iQh-uE-6kJ" firstAttribute="top" secondItem="dvW-Eq-en7" secondAttribute="top" constant="20" id="8dN-FL-5vw"/>
+                            <constraint firstItem="Hc5-c3-gW6" firstAttribute="trailing" secondItem="dvW-Eq-en7" secondAttribute="trailing" id="BKA-2V-XG4"/>
+                            <constraint firstItem="dvW-Eq-en7" firstAttribute="trailing" secondItem="iQh-uE-6kJ" secondAttribute="trailing" constant="20" id="G5J-5Z-4ct"/>
+                            <constraint firstItem="m6d-bP-cL8" firstAttribute="leading" secondItem="dvW-Eq-en7" secondAttribute="leading" constant="268" id="U9c-ke-l3d"/>
+                            <constraint firstItem="87j-Sm-w7K" firstAttribute="leading" secondItem="m6d-bP-cL8" secondAttribute="trailing" constant="216" id="UfN-8g-nZc"/>
+                            <constraint firstItem="87j-Sm-w7K" firstAttribute="top" secondItem="iQh-uE-6kJ" secondAttribute="bottom" constant="8" id="atk-Wz-FrS"/>
+                            <constraint firstItem="Hc5-c3-gW6" firstAttribute="bottom" secondItem="dvW-Eq-en7" secondAttribute="bottom" id="fhU-8E-evZ"/>
+                            <constraint firstItem="87j-Sm-w7K" firstAttribute="leading" secondItem="m6d-bP-cL8" secondAttribute="trailing" constant="216" id="i21-XA-e11"/>
+                            <constraint firstItem="iQh-uE-6kJ" firstAttribute="leading" secondItem="dvW-Eq-en7" secondAttribute="leading" constant="20" id="iey-z2-wgu"/>
+                            <constraint firstItem="Hc5-c3-gW6" firstAttribute="leading" secondItem="dvW-Eq-en7" secondAttribute="leading" id="oTE-zD-ctE"/>
+                            <constraint firstItem="dvW-Eq-en7" firstAttribute="trailing" secondItem="87j-Sm-w7K" secondAttribute="trailing" constant="20" id="skJ-w1-hsc"/>
+                            <constraint firstItem="dvW-Eq-en7" firstAttribute="bottom" secondItem="m6d-bP-cL8" secondAttribute="bottom" constant="20" id="w9q-Bl-ZKx"/>
+                            <constraint firstItem="Hc5-c3-gW6" firstAttribute="top" secondItem="dvW-Eq-en7" secondAttribute="top" id="yMo-dp-VGo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dvW-Eq-en7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edV-9k-3IE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="488.02816901408454" y="86.25"/>
+        </scene>
+        <!--About Author View Controller-->
+        <scene sceneID="cH3-T6-hx1">
+            <objects>
+                <viewController id="6TD-Qg-zdZ" customClass="AboutAuthorViewController" customModule="BullsEye" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qk0-p9-Yz9">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="25_thrones-2.w710.h473" translatesAutoresizingMaskIntoConstraints="NO" id="QHu-vU-nDK">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xFe-ak-lhi">
+                                <rect key="frame" x="20" y="20" width="338" height="233.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="3x6-QF-GfE"/>
+                                    <constraint firstAttribute="height" constant="233.5" id="4GU-Tm-Fjw"/>
+                                </constraints>
+                                <string key="text">Bobby McBride is part of a team ingenious developers on the Justice League of DealerSocket. With his QA partner in crime, Steve Lui, they ensure that in brightest day or darkest night, no defect will escape their sight!
+
+When not striving to learn how to create fantastic mobile apps, his mind constantly formulates ideas for Dungeons &amp; Dragons, which he enjoys alongside his brilliant wife Nermeen.
+
+Game on!
+</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BobbyAndNermeen" translatesAutoresizingMaskIntoConstraints="NO" id="SIO-8G-0gm">
+                                <rect key="frame" x="366" y="20" width="182" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="195" id="Yhc-yl-Lr0"/>
+                                    <constraint firstAttribute="width" constant="182" id="wCQ-Q7-1jg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFO-3i-Wjt">
+                                <rect key="frame" x="268" y="268" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="iaV-Jj-AFX"/>
+                                    <constraint firstAttribute="height" constant="32" id="xbt-uv-c1t"/>
+                                </constraints>
+                                <state key="normal" image="CloseButton512"/>
+                                <connections>
+                                    <action selector="close" destination="6TD-Qg-zdZ" eventType="touchUpInside" id="d69-G3-jF1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QHu-vU-nDK" firstAttribute="bottom" secondItem="Q46-hO-ulk" secondAttribute="bottom" id="2ca-BX-KVQ"/>
+                            <constraint firstItem="Q46-hO-ulk" firstAttribute="trailing" secondItem="SIO-8G-0gm" secondAttribute="trailing" constant="20" id="4qc-kC-rVq"/>
+                            <constraint firstItem="xFe-ak-lhi" firstAttribute="leading" secondItem="Q46-hO-ulk" secondAttribute="leading" constant="20" id="ACE-53-K3c"/>
+                            <constraint firstItem="zFO-3i-Wjt" firstAttribute="top" secondItem="xFe-ak-lhi" secondAttribute="bottom" constant="14.5" id="BKI-Zi-tzv"/>
+                            <constraint firstItem="SIO-8G-0gm" firstAttribute="leading" secondItem="xFe-ak-lhi" secondAttribute="trailing" constant="8" id="Eq6-7k-Vjx"/>
+                            <constraint firstItem="xFe-ak-lhi" firstAttribute="top" secondItem="Q46-hO-ulk" secondAttribute="top" constant="20" id="RrS-fr-atZ"/>
+                            <constraint firstItem="QHu-vU-nDK" firstAttribute="leading" secondItem="Q46-hO-ulk" secondAttribute="leading" id="SLi-jT-5Gh"/>
+                            <constraint firstItem="SIO-8G-0gm" firstAttribute="leading" secondItem="xFe-ak-lhi" secondAttribute="trailing" constant="8" id="THB-HF-aj2"/>
+                            <constraint firstItem="QHu-vU-nDK" firstAttribute="top" secondItem="Q46-hO-ulk" secondAttribute="top" id="VoW-dr-SWR"/>
+                            <constraint firstItem="Q46-hO-ulk" firstAttribute="bottom" secondItem="SIO-8G-0gm" secondAttribute="bottom" constant="105" id="aTs-HX-hJ6"/>
+                            <constraint firstItem="SIO-8G-0gm" firstAttribute="top" secondItem="Q46-hO-ulk" secondAttribute="top" constant="20" id="jy2-mu-HG5"/>
+                            <constraint firstItem="zFO-3i-Wjt" firstAttribute="centerX" secondItem="qk0-p9-Yz9" secondAttribute="centerX" id="u3z-iP-6P4"/>
+                            <constraint firstItem="QHu-vU-nDK" firstAttribute="trailing" secondItem="Q46-hO-ulk" secondAttribute="trailing" id="wJ6-5a-XwQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Q46-hO-ulk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v7T-mA-rif" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1157.7464788732395" y="90"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="25_thrones-2.w710.h473" width="288" height="176"/>
+        <image name="BobbyAndNermeen" width="242" height="256"/>
+        <image name="CloseButton512" width="256" height="256"/>
+        <image name="about" width="256" height="256"/>
+        <image name="crossbow512" width="256" height="256"/>
+        <image name="info-round-button512a" width="256" height="256"/>
+        <image name="resetButton" width="256" height="256"/>
+    </resources>
+</document>
