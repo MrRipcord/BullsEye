@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         } else if difference < 5 {
             title = "So close!"
             if difference == 1 {
-                points += 50
+                points += 51
             }
         } else if difference < 10 {
             title = "Hey! You're pretty good!"
