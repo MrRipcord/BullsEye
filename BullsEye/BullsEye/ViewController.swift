@@ -25,20 +25,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let roundedValue = slider.value.rounded()
         currentValue = Int(roundedValue)
-        resetGame()
+        score = 0
+        round = 0
+        startNewRound()
         
         let thumbImageNormal = #imageLiteral(resourceName: "target")
         slider.setThumbImage(thumbImageNormal, for: .normal)
     }
-
+    
     @IBAction func showAlert() {
         let difference = abs(targetValue - currentValue)
         var points = 100 - difference
         score += points
+        heavyButton()
         
         let title: String
         if difference == 0 {
             title = "Perfect!"
+            successBuzz()
             points += 100
         } else if difference < 5 {
             title = "So close!"
@@ -56,6 +60,7 @@ class ViewController: UIViewController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "Okay!", style: .default, handler: {
             action in
+            self.successBuzz()
             self.startNewRound()
         })
         alert.addAction(action)
@@ -65,12 +70,13 @@ class ViewController: UIViewController {
     @IBAction func sliderMoved(_ slider: UISlider){
         let roundedValue = slider.value.rounded()
         currentValue = Int(roundedValue)
+        selectionChange()
     }
     
     func startNewRound(){
         round += 1
         targetValue = Int.random(in: 1...100)
-        currentValue = 50
+        currentValue = Int.random(in: 1...100)
         slider.value = Float(currentValue)
         updateLabels()
     }
@@ -85,8 +91,49 @@ class ViewController: UIViewController {
         score = 0
         round = 0
         startNewRound()
+        mediumButton()
+    }
+
+    //Haptic Feedback
+    @IBAction func successButtonTapped(_ sender: UIButton) {
+        successBuzz()
+    }
+
+    @IBAction func mediumButtonTapped(_ sender: UIButton) {
+        mediumButton()
     }
     
+    @IBAction func heavyButtonTapped(_ sender: UIButton) {
+        heavyButton()
+    }
+    
+    @IBAction func selectionButtonTapped(_ sender: UIButton) {
+        selectionChange()
+    }
+    
+    
+    func successBuzz() {
+        let generator = UINotificationFeedbackGenerator()
+        generator.prepare()
+        generator.notificationOccurred(.success)
+    }
+    
+    func selectionChange() {
+        let generator = UISelectionFeedbackGenerator()
+        generator.selectionChanged()
+    }
+    
+    func mediumButton() {
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.prepare()
+        generator.impactOccurred()
+    }
 
+    func heavyButton() {
+        let generator = UIImpactFeedbackGenerator(style: .heavy)
+        generator.prepare()
+        generator.impactOccurred()
+    }
+    
 }
 

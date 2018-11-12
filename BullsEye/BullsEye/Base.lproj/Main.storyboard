@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,6 +29,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="info-round-button512a"/>
                                         <connections>
+                                            <action selector="mediumButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GcA-m1-lvK"/>
                                             <segue destination="G25-Cw-hPb" kind="presentation" modalTransitionStyle="flipHorizontal" id="nZ2-Jh-cd5"/>
                                         </connections>
                                     </button>
@@ -72,6 +73,9 @@
                                         <rect key="frame" x="20" y="236" width="32" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="resetButton"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityLabel" value="resetButton"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="resetGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nne-Dm-kJw"/>
                                         </connections>
@@ -193,17 +197,12 @@
                                 </constraints>
                                 <state key="normal" image="about"/>
                                 <connections>
+                                    <action selector="mediumButtonTapped:" destination="G25-Cw-hPb" eventType="touchUpInside" id="I6L-a0-iOw"/>
                                     <segue destination="6TD-Qg-zdZ" kind="presentation" modalTransitionStyle="flipHorizontal" id="pN6-Dy-rBf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6d-bP-cL8">
                                 <rect key="frame" x="268" y="268" width="32" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="32" id="4r8-QR-S5O"/>
-                                    <constraint firstAttribute="height" constant="32" id="hEe-ep-dIo"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="kld-WQ-xEh"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="l7y-mx-tSu"/>
-                                </constraints>
                                 <state key="normal" image="CloseButton512"/>
                                 <connections>
                                     <action selector="close" destination="G25-Cw-hPb" eventType="touchUpInside" id="bmD-gP-47N"/>
@@ -243,17 +242,17 @@ Enjoy!
                             <constraint firstItem="Hc5-c3-gW6" firstAttribute="trailing" secondItem="dvW-Eq-en7" secondAttribute="trailing" id="BKA-2V-XG4"/>
                             <constraint firstItem="pAO-mm-hCz" firstAttribute="top" secondItem="dvW-Eq-en7" secondAttribute="top" constant="20" id="EZt-Rm-mbp"/>
                             <constraint firstItem="pAO-mm-hCz" firstAttribute="leading" secondItem="dvW-Eq-en7" secondAttribute="leading" constant="20" id="HLU-IE-sAC"/>
-                            <constraint firstItem="m6d-bP-cL8" firstAttribute="leading" secondItem="dvW-Eq-en7" secondAttribute="leading" constant="268" id="U9c-ke-l3d"/>
-                            <constraint firstItem="87j-Sm-w7K" firstAttribute="leading" secondItem="m6d-bP-cL8" secondAttribute="trailing" constant="216" id="UfN-8g-nZc"/>
+                            <constraint firstItem="m6d-bP-cL8" firstAttribute="top" secondItem="87j-Sm-w7K" secondAttribute="top" id="IXd-rh-z2G"/>
                             <constraint firstItem="dvW-Eq-en7" firstAttribute="trailing" secondItem="pAO-mm-hCz" secondAttribute="trailing" constant="20" id="W6R-D0-hQ6"/>
+                            <constraint firstItem="m6d-bP-cL8" firstAttribute="bottom" secondItem="87j-Sm-w7K" secondAttribute="bottom" id="ZAc-OI-Gwr"/>
                             <constraint firstItem="87j-Sm-w7K" firstAttribute="top" secondItem="pAO-mm-hCz" secondAttribute="bottom" constant="8" id="bLM-I7-1gd"/>
                             <constraint firstItem="Hc5-c3-gW6" firstAttribute="bottom" secondItem="dvW-Eq-en7" secondAttribute="bottom" id="fhU-8E-evZ"/>
-                            <constraint firstItem="87j-Sm-w7K" firstAttribute="leading" secondItem="m6d-bP-cL8" secondAttribute="trailing" constant="216" id="i21-XA-e11"/>
+                            <constraint firstItem="m6d-bP-cL8" firstAttribute="leading" secondItem="dvW-Eq-en7" secondAttribute="leading" constant="268" id="jd7-Ga-32B"/>
                             <constraint firstItem="Hc5-c3-gW6" firstAttribute="leading" secondItem="dvW-Eq-en7" secondAttribute="leading" id="oTE-zD-ctE"/>
                             <constraint firstItem="pAO-mm-hCz" firstAttribute="top" secondItem="dvW-Eq-en7" secondAttribute="top" constant="20" id="qwI-cD-SUT"/>
                             <constraint firstItem="dvW-Eq-en7" firstAttribute="trailing" secondItem="87j-Sm-w7K" secondAttribute="trailing" constant="20" id="skJ-w1-hsc"/>
                             <constraint firstItem="pAO-mm-hCz" firstAttribute="leading" secondItem="dvW-Eq-en7" secondAttribute="leading" constant="20" id="u9s-rD-oyi"/>
-                            <constraint firstItem="dvW-Eq-en7" firstAttribute="bottom" secondItem="m6d-bP-cL8" secondAttribute="bottom" constant="20" id="w9q-Bl-ZKx"/>
+                            <constraint firstItem="m6d-bP-cL8" firstAttribute="centerX" secondItem="pAO-mm-hCz" secondAttribute="centerX" id="wjF-W1-zj8"/>
                             <constraint firstItem="Hc5-c3-gW6" firstAttribute="top" secondItem="dvW-Eq-en7" secondAttribute="top" id="yMo-dp-VGo"/>
                             <constraint firstItem="dvW-Eq-en7" firstAttribute="trailing" secondItem="pAO-mm-hCz" secondAttribute="trailing" constant="20" id="zgM-fH-zYy"/>
                         </constraints>
